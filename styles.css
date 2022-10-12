@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-decoration: none;
+
+}
+
+body{
+    background: url(https://drive.google.com/uc?export=download&id=1w-p5Os-mdl7Wn6vUYy-tdTF6BxbdWUUQ) no-repeat;
+    background-size: cover;
+    height: 350vh;
+}
+
+/*********
+*  NAVBAR *
+**********/ 
+
+.navbar{
+    background-color: #333333;
+    height: 9vh;
+    display: inline-flex;
+    /* padding: 5px 25px; */
+    justify-content: space-around;
+    align-items: center;
+    /* margin-right: 150px;
+    margin-left: 150px;  */
+    text-align: center;
+    width:100%;
+    font-size: 15px;
+    padding-left: 225px;
+    padding-right: 250px;
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    color: white;
+    /* padding-left: 220px; */
+}
+
+ul > li{
+    padding-top: 500px;
+    padding: 25px;
+    padding-top: 25px;
+}
+
+.dl-button{
+    padding-right: 10px;
+}
+
+.playbutton{
+    margin-top: 18px;
+    padding-right: 25px;
+}
+
+.dl-box{
+    border: 10px solid #282828;
+    border-radius: 15px;
+    background-color: #282828;
+    padding: 0 15px 0 15px;
+}
+
+/*********
+*  SECTION 1 *
+**********/ 
+
+.section-one{
+    height: 100vh;
+}
+
+/*********
+*  SECTION 2 *
+**********/ 
+
+.section-two{
+    height: 80vh;
+}
+
+/*********
+*  SECTION 3 *
+**********/ 
+
+.section-three{
+    height: 80vh;
+}
+
+/*********
+*  SECTION 4 *
+**********/ 
+
+.section-four{
+    height: 70vh;
+}
+
+.media-titles{
+    margin-top: 150px;
+    justify-content: center;
+}
