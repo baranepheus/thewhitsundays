@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The WhitSundays</title>
+
+    <!--CSS-->
     <link rel="stylesheet" href="styles.css">
+
+    <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
     <!--Font-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
     </style>
+
 </head>
 <body>
 
@@ -37,28 +43,84 @@
     </section>
     <!-- #4 -->
     <section class="section-four">
-        <ul class="media-titles">
-            <button id="videoBtn">Video</button>
-            <button id="photoBtn">Photography</button>
-            <button id="socialBtn">Social</button>
-            <button id="prBtn">PR</button>
-            <button id="radioBtn">Radio</button>
+        <ul class="tabs">
+            <li>Video</li>
+            <li>Photography</li>
+            <li>Social</li>
+            <li>PR</li>
+            <li>Radio</li>
         </ul>
-        <div class="container" id="media">
-            <div class="media">
-                <!-- <img src="https://drive.google.com/uc?export=download&id=1_4euUkfzzbtdyuw3fpKtNMSB_y3HJ-mX" alt="video-one" class="video-one">  -->
-                <!-- <img src="https://drive.google.com/uc?export=download&id=1RStCEFcgglGMWVAPc6Oam9IwZgPhdH5i" alt="video-one" class="video-two"> -->
-            </div>
-            <div class="caption">
-                <!-- <p class="photoTitle">Photography</p>
-                <p class="photoCaption">Shots posted on Facebook and Instagram every day inspired thousands of entries. We reacted to the storyline as it developed in real time, selecting and treating the next image according to the day's winning scene.</p> -->
-            </div>
-        </div>
-    </section>
 
-    <!--Button JS-->
-    <script src="script.js"></script>
-    <!--JQUERY-->
+        <div class="container">
+            <div class="content active">
+                <div class="slider">
+                    <div class="imagesVideo">
+                        <input type="radio" name="slide" id="videoOne" checked>
+                        <input type="radio" name="slide" id="videoTwo">
+
+                        <img src="https://drive.google.com/uc?export=download&id=1_4euUkfzzbtdyuw3fpKtNMSB_y3HJ-mX" class="videoOne" alt="video-one">
+                        <img src="https://drive.google.com/uc?export=download&id=1RStCEFcgglGMWVAPc6Oam9IwZgPhdH5i" class="videoTwo"alt="video-two">
+                    </div>
+                    <div class="dotsVideo">
+                        <label for="videoOne"></label>
+                        <label for="videoTwo"></label>
+                    </div>
+                </div>
+                <div class="caption">
+                    <p class="videoTitle">Video</p> 
+                    <p class="videoCaption">A 60 second promotional movie trailer played on TV, online as pre rolls and via Facebook, to promote the movie that was waiting to be written to our movie-loving target audience, and encourage them to enter.</p>
+                </div>
+            </div>
+
+            <div class="content" id="contentPhoto">
+                <div class="sliderPhoto">
+                    <div class="imagesPhoto">
+                        <input type="radio" name="slide" id="photoOne" checked>
+                        <input type="radio" name="slide" id="photoTwo">
+
+                        <img src="https://drive.google.com/uc?export=download&id=17tPuMjm2jCkhPmqbVXy5zYLDfyGvCFUh" alt="photo-one" class="photoOne">
+                        <img src="https://drive.google.com/uc?export=download&id=1OMHtgbWWa1uBSrcikCHReSkPj7XwgfrC" alt="photo-two" class="photoTwo">
+                    </div>
+                    <div class="dotsVideo">
+                        <label for="photoOne"></label>
+                        <label for="photoTwo"></label>
+                    </div>
+                </div>
+                <div class="caption">
+                    <p class="videoTitle">Photography</p> 
+                    <p class="videoCaption">Shots posted on Facebook and Instagram every day inspired thousands of entries. We reacted to the storyline as it developed in real time, selecting and treating the next image according to the day’s winning scene.</p>
+                </div>
+            </div>
+        
+            <!-- <div class="content">
+                <div class="media">
+                    <img src="https://drive.google.com/uc?export=download&id=1_4euUkfzzbtdyuw3fpKtNMSB_y3HJ-mX" alt="video-one" alt="video-one">
+                </div>
+                <div class="caption">
+                    <p class="videoTitle">Video</p> 
+                    <p class="videoCaption">A 60 second promotional movie trailer played on TV, online as pre rolls and via Facebook, to promote the movie that was waiting to be written to our movie-loving target audience, and encourage them to enter.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="media">
+                    <img src="https://drive.google.com/uc?export=download&id=1_4euUkfzzbtdyuw3fpKtNMSB_y3HJ-mX" alt="video-one" alt="video-one">
+                </div>
+                <div class="caption">
+                    <p class="videoTitle">Video</p> 
+                    <p class="videoCaption">A 60 second promotional movie trailer played on TV, online as pre rolls and via Facebook, to promote the movie that was waiting to be written to our movie-loving target audience, and encourage them to enter.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="media">
+                    <img src="https://drive.google.com/uc?export=download&id=1_4euUkfzzbtdyuw3fpKtNMSB_y3HJ-mX" alt="video-one" alt="video-one">
+                </div>
+                <div class="caption">
+                    <p class="videoTitle">Video</p> 
+                    <p class="videoCaption">A 60 second promotional movie trailer played on TV, online as pre rolls and via Facebook, to promote the movie that was waiting to be written to our movie-loving target audience, and encourage them to enter.</p>
+                </div>
+            </div> -->
+        </div>
+        <script src="app.js"></script>
 
 </body>
 </html>
