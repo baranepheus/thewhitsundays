@@ -129,7 +129,12 @@ ul > li{
 #contentPhoto{
     margin-left: -350px;
 }
-
+#contentPR{
+    margin-left: -325px;
+}
+#contentRadio{
+    margin-left: -350px;
+}
 .content.active{
     display: flex;
 }
