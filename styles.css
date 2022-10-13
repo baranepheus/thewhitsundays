@@ -22,17 +22,13 @@ body{
     background-color: #333333;
     height: 9vh;
     display: inline-flex;
-    /* padding: 5px 25px; */
     justify-content: space-around;
     align-items: center;
-    /* margin-right: 150px;
-    margin-left: 150px;  */
     text-align: center;
     width:100%;
     font-size: 15px;
     padding-left: 225px;
     padding-right: 250px;
-    vertical-align: middle;
 }
 
 ul{
@@ -45,7 +41,7 @@ ul{
 ul > li{
     padding-top: 500px;
     padding: 25px;
-    padding-top: 25px;
+    /* padding-top: 25px; */
 }
 
 .dl-button{
@@ -65,7 +61,7 @@ ul > li{
 }
 
 /*********
-*  SECTION 1 *
+* SECTION 1 *
 **********/ 
 
 .section-one{
@@ -73,7 +69,7 @@ ul > li{
 }
 
 /*********
-*  SECTION 2 *
+* SECTION 2 *
 **********/ 
 
 .section-two{
@@ -81,7 +77,7 @@ ul > li{
 }
 
 /*********
-*  SECTION 3 *
+* SECTION 3 *
 **********/ 
 
 .section-three{
@@ -89,7 +85,7 @@ ul > li{
 }
 
 /*********
-*  SECTION 4 *
+* SECTION 4 *
 **********/ 
 
 .section-four{
@@ -99,4 +95,58 @@ ul > li{
 .media-titles{
     margin-top: 150px;
     justify-content: center;
+    text-decoration: none;
 }
+
+button{
+    border: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    margin: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #1a3e4e;
+}
+
+#media{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.media{
+    margin-right: 75px;
+}
+.photo-one{
+    width: 120%;
+    height: auto;
+}
+
+.caption{
+    margin-left: 75px;
+    width: 270px;
+    /* background-color: #282828; */
+}
+
+/** VIDEO **/
+.video-one{
+    width: 100%;
+    height: auto;
+}
+
+/** PHOTO **/
+.photoTitle{
+    letter-spacing: 0.5px;
+    font-size: 30px;
+    font-weight: normal;
+}
+.photoCaption{
+    margin-top: 70px;
+}
+
+/* .videoTitle .videoCaption{
+
+} */

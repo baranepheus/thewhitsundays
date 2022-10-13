@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The WhitSundays</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--Font-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
@@ -37,13 +38,27 @@
     <!-- #4 -->
     <section class="section-four">
         <ul class="media-titles">
-            <li>Video</li>
-            <li>Photography</li>
-            <li>Social</li>
-            <li>PR</li>
-            <li>Radio</li>
-
+            <button id="videoBtn">Video</button>
+            <button id="photoBtn">Photography</button>
+            <button id="socialBtn">Social</button>
+            <button id="prBtn">PR</button>
+            <button id="radioBtn">Radio</button>
         </ul>
+        <div class="container" id="media">
+            <div class="media">
+                <!-- <img src="https://drive.google.com/uc?export=download&id=1_4euUkfzzbtdyuw3fpKtNMSB_y3HJ-mX" alt="video-one" class="video-one">  -->
+                <!-- <img src="https://drive.google.com/uc?export=download&id=1RStCEFcgglGMWVAPc6Oam9IwZgPhdH5i" alt="video-one" class="video-two"> -->
+            </div>
+            <div class="caption">
+                <!-- <p class="photoTitle">Photography</p>
+                <p class="photoCaption">Shots posted on Facebook and Instagram every day inspired thousands of entries. We reacted to the storyline as it developed in real time, selecting and treating the next image according to the day's winning scene.</p> -->
+            </div>
+        </div>
     </section>
+
+    <!--Button JS-->
+    <script src="script.js"></script>
+    <!--JQUERY-->
+
 </body>
 </html>
