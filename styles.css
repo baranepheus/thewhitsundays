@@ -12,12 +12,15 @@ body{
     background: url(https://drive.google.com/uc?export=download&id=1w-p5Os-mdl7Wn6vUYy-tdTF6BxbdWUUQ) no-repeat;
     background-size: cover;
     height: 350vh;
+    /* overflow: hidden; */
 }
 
 /*********
 *  NAVBAR *
 **********/ 
-
+html{
+    scroll-behavior: smooth;
+}
 .navbar{
     background-color: #333333;
     height: 9vh;
@@ -31,17 +34,15 @@ body{
     padding-right: 250px;
 }
 
-ul{
+.navbar ul{
     list-style: none;
     display: flex;
     color: white;
-    /* padding-left: 220px; */
 }
 
-ul > li{
+.navbar ul > li{
     padding-top: 500px;
     padding: 25px;
-    /* padding-top: 25px; */
 }
 
 .dl-button{
@@ -64,15 +65,15 @@ ul > li{
 * SECTION 1 *
 **********/ 
 
-.section-one{
-    height: 100vh;
+#section-one{
+    height: 95vh;
 }
 
 /*********
 * SECTION 2 *
 **********/ 
 
-.section-two{
+#section-two{
     height: 80vh;
 }
 
@@ -80,18 +81,22 @@ ul > li{
 * SECTION 3 *
 **********/ 
 
-.section-three{
-    height: 80vh;
+#section-three{
+    height: 90vh;
 }
 
 /*********
 * SECTION 4 *
 **********/ 
+#section-three{
+    height: 90vh;
+}
 
 .tabs {
-    margin-top: 150px;
+    margin-top: 100px;
     list-style: none;
     justify-content: center;
+    display: flex;
 }
 
 .tabs li{
@@ -258,4 +263,88 @@ ul > li{
 
 #photoTwo:checked ~ .photoTwo{
     margin-left: -100%;
+}
+
+.nav{
+    position: fixed;
+    top:50%; right:30px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.nav ul{
+    list-style: none;
+    padding: 0; margin: 0;
+}
+
+.nav ul li {
+    width: 200px;
+    position: relative;
+    text-align: right;
+}
+
+.nav ul li .dot{
+    color: white;
+    display: block;
+    padding: 5px 0;
+}
+
+.nav ul li .dot span{
+    display: inline-block;
+    background: #1a3e4e;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    margin-right: 30px;
+    border-radius: 3px;
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+.nav ul li .dot span::before{
+    content: '';
+    position: absolute;
+    top:50%; right:0;
+    transform: translate(7px, -50%);
+    border-left: 7px solid #1a3e4e;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    display: block;
+}
+
+.nav ul li .dot::before,
+.nav ul li .dot::after{
+  content: '';
+  position: absolute;
+  top:50%;
+  border-radius: 50%;
+  display: block;
+  transition: .2s ease-out;
+}
+
+.nav ul li .dot::before{
+    height:2px;
+    width: 2px;
+    border: 2px solid white;
+    right:0;
+    transform: translateY(-50%);
+}
+
+.nav ul li .dot.active::before,
+.nav ul li:hover .dot::before{
+    border-color: white;
+    background: white;
+}
+  
+.nav ul li .dot::after{
+    height:5px;
+    width: 5px;
+    border: 2px solid white;
+    right:-3px;
+    transform: translateY(-50%) scale(0);
+    background-color: white;
+}
+
+.nav ul li .dot.active::after,
+.nav ul li:hover .dot::after{
+  transform: translateY(-50%) scale(1);
 }
